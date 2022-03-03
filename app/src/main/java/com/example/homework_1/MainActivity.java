@@ -7,6 +7,7 @@ import android.widget.AdapterView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.homework_1.databinding.ActivityItemBinding;
 import com.example.homework_1.databinding.ActivityMainBinding;
 
 import java.util.ArrayList;
@@ -40,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
         binding.listview.setClickable(true);
         binding.listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long l) {
+            public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
 
                 Intent i = new Intent(MainActivity.this, ItemActivity.class);
                 i.putExtra("name",name[position]);

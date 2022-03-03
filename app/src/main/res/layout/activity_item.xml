@@ -24,11 +24,11 @@ tools:context=".ItemActivity">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Food Name:"
+            android:text="Name:"
             android:textSize="12sp"/>
 
         <TextView
-            android:id="@+id/foodName"
+            android:id="@+id/name_food"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Oatmeal"
@@ -41,7 +41,7 @@ tools:context=".ItemActivity">
 
 
 <RelativeLayout
-    android:id="@+id/relative_calories"
+    android:id="@+id/relative_info"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_below="@+id/relative_name"
@@ -57,11 +57,11 @@ tools:context=".ItemActivity">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Rich in:"
+            android:text="Nutrition:"
             android:textSize="12sp"/>
 
         <TextView
-            android:id="@+id/nutrition"
+            android:id="@+id/nutrition_profile"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Fiber"
@@ -73,7 +73,7 @@ tools:context=".ItemActivity">
 </RelativeLayout>
 
 <View
-    android:layout_below="@+id/relative_calories"
+    android:layout_below="@+id/relative_info"
     android:layout_width="match_parent"
     android:layout_height="1dp"
     android:background="@color/teal_700"/>

@@ -10,11 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Homework1">
         <activity
+            android:name=".ItemActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.example.homework_1.ItemActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

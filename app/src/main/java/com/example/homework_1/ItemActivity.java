@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.util.Log;
 
 import com.example.homework_1.databinding.ActivityItemBinding;
+import com.example.homework_1.databinding.ActivityMainBinding;
 
 
 public class ItemActivity extends AppCompatActivity {
@@ -24,10 +25,10 @@ public class ItemActivity extends AppCompatActivity {
         if (intent != null) {
 
             String name = intent.getStringExtra("name");
-            String rich = intent.getStringExtra("rich");
+            String rich = intent.getStringExtra("nutrition");
 
-            binding.foodName.setText(name);
-            binding.nutrition.setText(rich);
+            binding.nameFood.setText(name);
+            binding.nutritionProfile.setText(rich);
         }
     }
 }

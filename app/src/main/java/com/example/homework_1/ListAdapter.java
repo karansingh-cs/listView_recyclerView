@@ -28,12 +28,10 @@ public class ListAdapter extends ArrayAdapter<Item> {
             if (convertView == null){
                 convertView = LayoutInflater.from(getContext()).inflate(R.layout.list_item,parent, false);
             }
+
             TextView itemName = convertView.findViewById(R.id.foodName);
-            TextView richIn = convertView.findViewById(R.id.nutrition);
 
             itemName.setText(item.name);
-            //richIn.setText(item.name);
-
 
             return convertView;
         }
